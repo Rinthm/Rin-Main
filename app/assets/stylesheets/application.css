@@ -15,29 +15,45 @@
  */
 
 body {
-	background: url('painted-hills.jpg') no-repeat center center fixed; 
+	/*background: url('painted-hills.jpg') no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /*background-color: black;*/
   margin: 0;
 }
 
 canvas {
 	width: 100%;
 	height: 100%;
+	background-color: black;
+	margin: 0;
 }
 
 #landing-wrap {
 
 }
 
-#title {
+.title {
 	font-family: cursive;
-	font-size: 45px;
+	font-size: 30px;
 	position: fixed;
 	display: inline;
-	top: 69%;
-	left: 47%;
+	top: 75%;
+	left: 48%;
+	color: white;
+}
+
+#enter {
+	left: 44.4%;
+}
+
+#enter a {
+	text-decoration: none;
+	color: #E1E1E1;
+}
+
+#enter a:hover {
 	color: white;
 }
