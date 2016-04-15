@@ -12,5 +12,37 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+
+$(function() {
+
+	function getRandomColor() {
+		var randomColor = '#' + Math.random().toString(16).substring(2, 8);
+		return randomColor;
+	};
+
+	setInterval(function() {
+		$('#title').animate({
+			color: 'blue'
+		}, 300).animate({
+			color: 'red'
+		}, 300);
+	}, 1000);
+
+	// $('canvas').on('click', function(e) {
+	// 	e.preventDefault();
+	// 	var $hey = $(this);
+	// 	$.ajax({
+	// 		method: "GET",
+	// 		url: '/landing/test'
+	// 	})
+	// 	.done(function(r){
+	// 		$hey.append(r);
+	// 	})
+	// });
+
+	$('#title').hide().delay(1500).fadeIn(1500).delay(900).fadeOut(1500);
+	$('canvas').hide().fadeIn(1500)
+	$('#enter').hide().delay(6000).fadeIn(1500)
+
+})
