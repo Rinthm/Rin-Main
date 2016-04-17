@@ -25,7 +25,7 @@
         camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
         camera.position.z = 1000;
 
-        geometry = new THREE.TorusKnotGeometry( 180, 6, 300, 9, 3, 11 );
+        geometry = new THREE.TorusKnotGeometry( 180, 6, 300, 3, 5, 11 );
         material = new THREE.MeshBasicMaterial( { color: getRandomColor(), wireframe: false } );
 
         mesh = new THREE.Mesh( geometry, material );
@@ -48,6 +48,13 @@
         renderer.render( scene, camera );
 
     }
+    $(function() {
+    	$('canvas').on('click', function(e){
+    		e.preventDefault();
+    		mesh.material.color.setHex(('0x' + getRandomColor()).replace(/['#"]+/g, ''));
+    	})
+    })
+    
 
 </script>
 </div>
