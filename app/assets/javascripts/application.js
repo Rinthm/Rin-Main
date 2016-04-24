@@ -41,8 +41,8 @@ $(function() {
 	// 	})
 	// });
 
-	$('#title').hide().delay(1500).fadeIn(1500).delay(900).fadeOut(1500);
-	$('canvas').hide().fadeIn(1500)
-	$('#enter').hide().delay(6000).fadeIn(1500)
+	$('#title').hide().delay(900).fadeIn(900).delay(900).fadeOut(900);
+	$('canvas').hide().fadeIn(900)
+	$('#enter').hide().delay(3600).fadeIn(900)
 
 })
