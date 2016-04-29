@@ -45,4 +45,9 @@ $(function() {
 	$('canvas').hide().fadeIn(900)
 	$('#enter').hide().delay(3600).fadeIn(900)
 
+	// $('#enter').on('click', function(event){
+	// 	event.preventDefault();
+	// 	$('canvas').fadeOut(900)
+	// })
+
 })
