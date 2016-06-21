@@ -21,33 +21,18 @@ $(function() {
 		return randomColor;
 	};
 
-	setInterval(function() {
-		$('#title').animate({
-			color: 'blue'
-		}, 300).animate({
-			color: 'red'
-		}, 300);
-	}, 1000);
-
-	// $('canvas').on('click', function(e) {
-	// 	e.preventDefault();
-	// 	var $hey = $(this);
-	// 	$.ajax({
-	// 		method: "GET",
-	// 		url: '/landing/test'
-	// 	})
-	// 	.done(function(r){
-	// 		$hey.append(r);
-	// 	})
-	// });
+	function redirectHome() {
+    window.location = '/home';
+  };
 
 	$('#title').hide().delay(900).fadeIn(900).delay(900).fadeOut(900);
-	$('canvas').hide().fadeIn(900)
-	$('#enter').hide().delay(3600).fadeIn(900)
+	$('canvas').hide().fadeIn(900);
+	$('#enter').hide().delay(3600).fadeIn(900);
 
-	// $('#enter').on('click', function(event){
-	// 	event.preventDefault();
-	// 	$('canvas').fadeOut(900)
-	// })
+	$('#enter').on('click', function(event){
+		event.preventDefault();
+		$('canvas').fadeOut(900, redirectHome)
+		$('nav').hide().delay(900).fadeIn(900);
+	})
 
 })
