@@ -1,9 +1,13 @@
+<head>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
 <div id="landing-wrap">
 	<div id="title" class="title">
 		Rin.
 	</div>
 	<div id="enter" class="title">
-		<%= link_to '⬳(-_-)⟿', '/landing/test' %>
+		<%= link_to '⬳(-_-)⟿', '/home' %>
 	</div>
 	<script id="three">
 
@@ -42,8 +46,8 @@
 
         requestAnimationFrame( animate );
 
-        mesh.rotation.x += 0.009;
-        mesh.rotation.y += 0.09;
+        // mesh.rotation.x += 0.00;
+        mesh.rotation.y += 0.06;
 
         renderer.render( scene, camera );
 

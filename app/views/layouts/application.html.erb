@@ -7,6 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<nav class="nav-main-wrap">
+		<span class="landing-link"><%= link_to '⬳(-_-)⟿', '/' %></span>
+		<span class="nav-logo"><%= link_to 'Rin.', '/home' %></span>
+		<ul class="nav-main">
+			<li class="nav-item">About</li>
+			<li class="nav-item">Blog</li>
+			<li class="nav-item">Projects</li>
+			<li class="nav-item">Music</li>
+			<li class="nav-item">Contact</li>
+		</ul>
+	</nav>
 
 <%= yield %>
 
