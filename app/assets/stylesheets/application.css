@@ -48,12 +48,12 @@ canvas {
 	left: 44.4%;
 }
 
-#enter a {
+a {
 	text-decoration: none;
-	color: #C4C4C4;
+	color: #DBDBDB;
 }
 
-#enter a:hover {
+a:hover {
 	color: white;
 }
 
@@ -66,14 +66,19 @@ canvas {
 	opacity: 0.6;
 }
 
+.landing-link a {
+	display: inline-block;
+	font-size: 10px;
+	float: left;
+	margin: 23px 0px 5px 5px;
+}
+
 .nav-logo a {
 	display: inline-block;
 	font-size: 30px;
 	font-family: cursive;
-	text-decoration: none;
-	color: white;
 	float: left;
-	margin: 5px 0px 0px 30px;
+	margin: 5px 0px 0px 60px;
 }
 
 .nav-main {
